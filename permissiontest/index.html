@@ -1,0 +1,17 @@
+<h1>
+    Filter page
+</h1>
+<div>Everyone should be seeing this</div>
+<psfilter permissions="standard" replace="general" replace-style="font-weight: bold;">
+    <div>You should only be seeing this if you have the <b>standard</b> permissions.</div>
+</psfilter>
+
+<psfilter permissions="special" replace="general">
+    <div>You should only be seeing this if you have the <b>special</b> permissions.</div>
+</psfilter>
+
+<psfilter permissions="standard" replace="general">
+    <psfilter permissions="standard" replace="general">
+        <div>You should only be seeing this if you have the <b>standard</b> and <b>special</b> permissions.</div>
+    </psfilter>
+</psfilter>
